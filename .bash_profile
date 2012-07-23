@@ -24,3 +24,6 @@ OLS=$OL/sbin
 path_munge $HOME/bin $OLB $OLS
 
 export PATH path_munge
+
+# Haven't had to set this in a while
+mesg n
