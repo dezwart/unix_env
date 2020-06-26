@@ -54,7 +54,7 @@ if [ "$PS1" ]; then
 fi
 
 export EDITOR=vi
-export EMAIL=dezwart@gmail.com
+export EMAIL=pete@dezwart.net.au
 export LESS="--LONG-PROMPT"
 #export MAVEN_OPTS="-XX:+PrintGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+DisableExplicitGC -XX:+UseParallelOldGC"
 export GIT_PAGER=""
