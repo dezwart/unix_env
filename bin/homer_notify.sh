@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 count=0
 retries=10
