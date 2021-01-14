@@ -9,7 +9,6 @@
 !.gnupg/gpg.conf
 !.gnupg/gpg-agent.conf
 !.git
-!.gitconfig
 !.gitignore
 !.hgrc
 !.multitailrc
