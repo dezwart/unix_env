@@ -29,7 +29,7 @@
 !.sbt/plugins/plugins.sbt
 !.irssi
 !.irssi/config
-!.irssi/garden.theme
+!.irssi/dezwart.theme
 !bin
 !bin/RBackup.sh
 !bin/md.sh
