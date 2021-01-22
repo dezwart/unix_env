@@ -253,7 +253,7 @@ abstracts = {
 
   # default background for all statusbars. You can also give
   # the default foreground color for statusbar items.
-  sb_background = "%g";
+  sb_background = "%w";
 
   # default backround for "default" statusbar group
   #sb_default_bg = "%4";
@@ -274,13 +274,13 @@ abstracts = {
   topicsbstart = "{sbstart $*}";
   topicsbend = "{sbend $*}";
 
-  prompt = "%K[%n%g$*%K]%n ";
+  prompt = "%g[%n$*%g]%n ";
 
-  sb = " %g[%n$*%g]%n";
+  sb = "%g[%n$*%g]%n";
   sbmode = "(%g+%n$*)";
   sbaway = " (%YZZZzzz...%n)";
   sbservertag = ":$0 (change with ^X)";
-  sbnickmode = "$0";
+  sbnickmode = "%K$0%n";
 
   # activity in statusbar
 
