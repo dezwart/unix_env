@@ -246,6 +246,10 @@ nuke_docker_from_orbit () {
   fi
 }
 
+gtd () {
+  echo | mail -s "$*" gtd@dezwart.net.au
+}
+
 # Source local environment specific script
 LOCAL_ENV=~/.bash_local
 if [ -f $LOCAL_ENV ]
