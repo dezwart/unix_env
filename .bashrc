@@ -259,6 +259,13 @@ dvi2pdf () {
     exec dvips -Ppdf -t a4 -q -f "$infile" | gs -q -P- -dSAFER -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sstdout=%stderr -sOutputFile="$outfile" -c .setpdfwrite -
 }
 
+pdfcombine () {
+    local outfile=${1}
+    shift
+
+    gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -sOutputFile=$outfile $*
+}
+
 # Source local environment specific script
 LOCAL_ENV=~/.bash_local
 if [ -f $LOCAL_ENV ]
