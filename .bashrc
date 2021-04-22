@@ -266,6 +266,12 @@ pdfcombine () {
     gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -sOutputFile=$outfile $*
 }
 
+# Set UoW TeX template input dir root if exists
+if [ -d ~/Documents/Source/Personal/git/uow/Templates ]
+then
+    export TEXINPUTS=~/Documents/Source/Personal/git/uow/Templates//:
+fi
+
 # Source local environment specific script
 LOCAL_ENV=~/.bash_local
 if [ -f $LOCAL_ENV ]
