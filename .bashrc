@@ -259,6 +259,10 @@ dvi2pdf () {
     exec dvips -Ppdf -t a4 -q -f "$infile" | gs -q -P- -dSAFER -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sstdout=%stderr -sOutputFile="$outfile" -c .setpdfwrite -
 }
 
+dvi2png () {
+    dvipng -D 600 -T tight $1
+}
+
 pdfcombine () {
     local outfile=${1}
     shift

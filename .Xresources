@@ -25,7 +25,8 @@ URxvt*urgentOnBell: false
 URxvt*visualBell: true
 URxvt*mapAlert: true
 URxvt*mouseWheelScrollPage: false
-URxvt*background: Black
+URxvt*depth: 32
+URxvt*background: rgba:0000/0000/0000/cccc
 URxvt*foreground: White
 URxvt*colorUL: yellow
 URxvt*underlineColor: yellow
