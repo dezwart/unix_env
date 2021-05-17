@@ -267,7 +267,13 @@ pdfcombine () {
     local outfile=${1}
     shift
 
-    gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -sOutputFile=$outfile $*
+    if [ ! -e $outfile ]
+    then
+        gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -sOutputFile=$outfile $*
+    else
+        echo "$outfile: exists, not combining."
+        false
+    fi
 }
 
 # Set UoW TeX template input dir root if exists
