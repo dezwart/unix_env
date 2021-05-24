@@ -260,7 +260,7 @@ dvi2pdf () {
 }
 
 dvi2png () {
-    dvipng -D 600 -T tight $1
+    dvipng -D 600 -T tight "$1"
 }
 
 pdfcombine () {
